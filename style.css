@@ -1,0 +1,36 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.block {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.cell {
+    padding: 30px;
+    margin: 2px;
+    background: cyan;
+    border: 1px solid black;
+}
+.cell-active {
+    background: darkgoldenrod;
+}
+.cell-black {
+    background: black;
+}
+.nav {
+    display: block;
+    text-align: center;
+}
+.nav_btn {
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    margin-bottom: 3px;
+}
