@@ -7,8 +7,8 @@ const pole = {
             [0,1,1,0,0,0],
             [0,0,1,1,0,0],
             [0,1,0,1,1,0],
-            [2,0,0,0,0,0],
-            [0,0,1,0,0,1],
+            [0,0,0,0,0,0],
+            [2,0,1,0,0,1],
             [1,1,0,0,1,1],
         ],
         level1Start : null,
@@ -81,15 +81,16 @@ document.addEventListener('keydown', function(event) {
     let next;
     let prev;
 
-           
     switch (event.code) {
         case 'ArrowRight':
+           
             y = y + 1;
            
-            box.classList.remove('cell-active');
+            //box.classList.remove('cell-active');
                                                         
             if(document.querySelector(`[data-cell="${x},${y}"`) !== null && temp.includes(document.querySelector(`[data-cell="${x},${y}"`).dataset.cell) !== true) {
                 
+                box.classList.remove('cell-active');
                 audio.play();
 
                 t = document.querySelector(`[data-cell="${x},${y}"`).dataset.cell;
